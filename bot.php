@@ -6,7 +6,7 @@ error_reporting(0);
 set_time_limit(0);
 
 flush();
-$API_KEY = $_ENV['BOT_TOKEN']; 
+$API_KEY = $_ENV['BOT_TOKEN'];
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
@@ -57,12 +57,12 @@ if ($text == "/start") {
                 'chat_id' =>$chat_id,
                 'text' =>"***$START_MESSAGE
 
-Use*** `/bin xxxxx` ***to check bin on bin-su.***",
+bin စစ်ဖို့***  ***`/bin xxxxx`ကိုသုံးပါ။ @eka_hca မြန်မာမှုပြုသည်။*** Original **[repo](https://github.com/Benchamxd/Bin-Checker)**",
  'parse_mode'=>'MarkDown',
-            
+
         ]);
- }if(strpos($text,"/bin") !== false){ 
-$bin = trim(str_replace("/bin","",$text)); 
+ }if(strpos($text,"/bin") !== false){
+$bin = trim(str_replace("/bin","",$text));
 
 $data = json_decode(file_get_contents("https://bins-su-api.now.sh/api/$bin"),true);
 $bank = $data['data']['bin'];
@@ -75,29 +75,29 @@ $country =  $data['data']['country'];
  if($data['data']){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"***VALID BIN✅
-               
+                'text' =>"*** သင့် BIN သည် အသုံးပြုလို့ရပါသည်✅
+
 ➤ Bɪɴ : $bin
 
-➤ Tʏᴘᴇ : $type
+➤ အမျိုးစား : $type
 
 ➤ Bʀᴀɴᴅ : $vendor
 
-➤ Bᴀɴᴋ : $bank
+➤ ဘဏ် : $bank
 
-➤ Cᴏᴜɴᴛʀʏ : $country
+➤ နိုင်ငံ : $country
 
 ➤ Cʀᴇᴅɪᴛ/Dᴇʙɪᴛ : $type
 
-🔺BIN CHECKED FROM DATABASE OF BIN-SU🔻***",
+🔺BIN CHECKED FROM DATABASE OF BIN-SU🔻 @eka_hca မြန်မာမှုပြုသည်။***Original **[repo](https://github.com/Benchamxd/Bin-Checker)**",
 'parse_mode'=>"MarkDown",
 ]);
     }
 else {
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"INVALID BIN❌",
-               
+                'text' =>"သင့် BIN သည် အသုံးပြုမရပါ❌@eka_hca မြန်မာမှုပြုသည်။Original **[repo](https://github.com/Benchamxd/Bin-Checker)**",
+
 ]);
 }
 }
