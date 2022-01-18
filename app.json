@@ -1,20 +1,20 @@
 {
-    "name": "Bin-Checker Bot",
-    "description": "A simple bot to check if the bin is valid or not.",
+    "name": "Bin-Checker Bot မြန်မာ ဗားရှင်း",
+    "description": "bin တွေ သုံးလို့ ရမရ စစ်ဖို့အတွက် သုံးနိုင်တဲ့ Bin Checker ဖြစ်ပါတယ်။",
     "keywords": [
         "Bin",
         "Bot",
         "Telegra."
     ],
     "website": "#TODO",
-    "repository": "https://github.com/Benchamxd/Bin-Checker",
+    "repository": "https://github.com/htoocharaung/Bin-Checker",
     "success_url": "/",
     "env": {
         "BOT_TOKEN": {
-            "description": "your Telegram Bot Token, from @BotFather"
+            "description": "@BotFather ကနေ TOKEN ယူပြီး ထည့်ပါ"
         },
         "START_MESSAGE": {
-            "description": "A start message for your bot."
+            "description": "start message မှာ ဖော်ပြ စေချင်တာ ထည့်ပါ"
         }
     },
     "formation": {
