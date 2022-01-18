@@ -15,11 +15,11 @@ AFTER DEPLOY DO SET WEBHOOK BY ``api.telegram.org/bot<your bot token>/setwebhook
 
 ``START_MESSAGE : start message မှာ ဖော်ပြ စေချင်တာ ထည့်ပါ``
 
-# COMMANDS
+# COMMANDS to set
 
-``/start - bot ကို စတင် အသုံးပြုရန်``
+``start - bot ကို စတင် အသုံးပြုရန်``
 
-``/bin xxxxx - bin စစ်ရန်``
+``bin xxxxx - bin စစ်ရန်``
 
 # Original repository and credit go to
 
