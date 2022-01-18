@@ -1,31 +1,26 @@
 # Bin-Checker-Bot
 
-A simple Telegram bot, in PHP, to check if the bin is valid or not.
+bin တွေ သုံးလို့ ရမရ စစ်ဖို့အတွက် သုံးနိုင်တဲ့ Bin Checker ဖြစ်ပါတယ်။
 
 # DEPLOY
-YOU CAN SIMPLY DEPLOY ON HEROKU BY CLICKING THE BUTTON BELOW
+မြန်မာ ဗားရှင်းအတွက် အောက်က Deploy To Heroku ကို နှိပ်ပြီး အလွယ်တကူ Deploy နိုင်ပါတယ်။
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Benchamxd/Bin-Checker/tree/main)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/htoocharaung/Bin-Checker/tree/main)
 
 AFTER DEPLOY DO SET WEBHOOK BY ``api.telegram.org/bot<your bot token>/setwebhook?url=<Heroku site link>/bot.php``
 
-# Configarations
+# Heroku config vars မှာ ထည့်ရန် လိုအပ်ချက်များ
 
-``BOT_TOKEN : YOUR BOT TOKEN FROM @BOTFATHER``
+``BOT_TOKEN : @BotFather ကနေ TOKEN ယူပြီး ထည့်ပါ``
 
-``START_MESSAGE : A START MESSAGE FOR YOUR BOT``
+``START_MESSAGE : start message မှာ ဖော်ပြ စေချင်တာ ထည့်ပါ``
 
 # COMMANDS
 
-``/start - To stat the bin``
+``/start - bot ကို စတင် အသုံးပြုရန်``
 
-``/bin xxxxx - To Check the bin``
+``/bin xxxxx - bin စစ်ရန်``
 
-## HELP ME
+# Original repository and credit go to
 
-For any type of help on deploy. Contact us on [INDUS CHATS](https://t.me/induschats).
-
-
-##
-
-**DO GIVE A STAR TO MY PROJECT TO SHOW YOUR SUPPORT!!**
+[ဒီနေရာမှာကြည့်ပါ / click here](https://github.com/Benchamxd/Bin-Checker)
